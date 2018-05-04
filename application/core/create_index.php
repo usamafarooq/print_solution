@@ -30,7 +30,7 @@ $contents = '		<!-- /.Navbar  Static Side -->
 										<?php 
 											if (%permission["created"] == "1") {
 										?>
-										<a href="<?php echo base_url("'.$controller_name.'/create") ?>"><button class="btn btn-info pull-right">Add '.str_replace("_"," ",ucfirst($controller_name)).'</button></a>
+										<a href="<?php echo base_url("admin/'.$controller_name.'/create") ?>"><button class="btn btn-info pull-right">Add '.str_replace("_"," ",ucfirst($controller_name)).'</button></a>
 										<?php } ?>
 									</div>
 								</div>
@@ -75,7 +75,7 @@ foreach ($fileds as $f) {
 	}
 	else{
 		if ($f['filed_type'] == 'file') {
-			$contents .= '<td><a href="<?php echo base_url() ?>/<?php echo %module["'.$f['name'].'"] ?>">View File</a></td>';
+			$contents .= '<td><a href="<?php echo base_url() ?>admin/<?php echo %module["'.$f['name'].'"] ?>">View File</a></td>';
 		}
 		else{
 			$contents .= '<td><?php echo %module["'.$f['name'].'"] ?></td>';
@@ -89,12 +89,12 @@ foreach ($fileds as $f) {
 														<?php 
 															if (%permission["edit"] == "1") {
 														?>
-														<a href="<?php echo base_url() ?>'.$controller_name.'/edit/<?php echo %module["id"] ?>"><img src="<?php echo base_url() ?>assets/record1.png" title="View Order" alt="View Order" width="35" height="35"></a>
+														<a href="<?php echo base_url() ?>admin/'.$controller_name.'/edit/<?php echo %module["id"] ?>"><img src="<?php echo base_url() ?>assets/record1.png" title="View Order" alt="View Order" width="35" height="35"></a>
 														<?php } ?>
 														<?php 
 															if (%permission["deleted"] == "1") {
 														?>
-		                                                <a href="<?php echo base_url() ?>'.$controller_name.'/delete/<?php echo %module["id"] ?>"><img src="<?php echo base_url() ?>assets/d-icon.png" title="Delete" alt="Delete" width="35" height="35"></a>
+		                                                <a href="<?php echo base_url() ?>admin/'.$controller_name.'/delete/<?php echo %module["id"] ?>"><img src="<?php echo base_url() ?>assets/d-icon.png" title="Delete" alt="Delete" width="35" height="35"></a>
 		                                                <?php } ?>
 	                                                </td>
 	                                                <?php } ?>

@@ -28,7 +28,7 @@
 
             </div>
             <h3>Welcome to PharmEvo</h3>
-            <form class="m-t" role="form" method="post" action="<?php echo base_url() ?>login/check_login">
+            <form class="m-t" role="form" method="post" action="<?php echo base_url() ?>admin/login/check_login">
                 <div class="form-group">
                     <input type="text" class="form-control" name="email" placeholder="Email" required="">
                 </div>

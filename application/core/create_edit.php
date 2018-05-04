@@ -22,7 +22,7 @@ $contents = '
         </div>
         <!-- /. Content Header (Page header) -->
 
-        <form method="post" action="<?php echo base_url() ?>'.$controller_name.'/update" enctype="multipart/form-data">
+        <form method="post" action="<?php echo base_url() ?>admin/'.$controller_name.'/update" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?php echo %'.$controller_name.'["id"] ?>">
             <div class="row">
                 <div class="col-sm-12">
