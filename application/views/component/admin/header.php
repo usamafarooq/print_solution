@@ -96,7 +96,7 @@
                             </div>
                         </li>
                         <!-- /.Full page search -->
-                        <li><a id="menu-toggle" href="#"><i class="material-icons">apps</i></a></li>
+                        
                         <!-- /.Sidebar menu toggle icon -->
                         <!--Start dropdown mega menu-->
 
@@ -154,20 +154,7 @@
                         <!--        <li class="rad-dropmenu-footer"><a href="#">See All Tasks</a></li>-->
                         <!--    </ul>-->
                         <!--</li>-->
-                        <li class="dropdown" id="click_notification" >
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="material-icons">add_alert</i>
-<span class="label label-success" id="count_notification"></span>                            </a>
-                            <ul class="dropdown-menu dropdown-alerts">
-                                <li class="rad-dropmenu-header"><a href="#">Your Notifications</a></li>
-
-
-                                <div id="get_notification" style="overflow:auto;height:300px;">
-
-                                </div>
-                            </ul>  <!-- /.dropdown-alerts -->
-                            <!-- /.dropdown-alerts -->
-                        </li>
+                       
                         <!-- /.Dropdown -->
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -182,7 +169,7 @@
                             </ul><!-- /.dropdown-user -->
                         </li><!-- /.Dropdown -->
                         <li class="log_out">
-                            <a href="<?php echo base_url() ?>admin/destroy">
+                            <a href="<?php echo base_url() ?>admin/logout/destroy">
                                 <i class="material-icons">power_settings_new</i>
                             </a>
                         </li><!-- /.Log out -->
